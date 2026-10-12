@@ -1,5 +1,6 @@
+# .gitignore for Salesforce Projects
 
-# Salesforce CLI local settings and authentication
+# Project settings and local configuration
 .sf/
 .sfdx/
 .localdevserver/
@@ -7,27 +8,36 @@
 # Node.js dependencies
 node_modules/
 
-# Logs and temporary files
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+
+# Temporary files
 tmp/
 temp/
 
 # IDE settings
 .idea/
-*.swp
-*.swo
+.vscode/
 
 # Operating system files
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# Environment files and secrets
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 
-# Test output
+# Test reports and coverage
 .nyc_output/
 coverage/
 test-results/
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.swo
