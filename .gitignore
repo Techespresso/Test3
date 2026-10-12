@@ -1,43 +1,33 @@
-# Salesforce CLI local files
+
+# Salesforce CLI local settings and authentication
 .sf/
 .sfdx/
-.sfdx-local/
 .localdevserver/
 
 # Node.js dependencies
 node_modules/
 
-# Test and coverage output
-.nyc_output/
-coverage/
-
-# Logs
+# Logs and temporary files
 *.log
-npm-debug.log*
-yarn-debug.log*
+tmp/
+temp/
+
+# IDE settings
+.idea/
+*.swp
+*.swo
 
 # Operating system files
 .DS_Store
 Thumbs.db
 Desktop.ini
 
-# IDE-specific settings
-.idea/
-*.swp
-*.swo
-
-# Environment variables and secrets
+# Environment files and secrets
 .env
 .env.*
 !.env.example
 
-# Local temporary files
-tmp/
-temp/
-
-# Salesforce source tracking files
-.sfdx/tools/
-
-# Optional: local test artifacts
+# Test output
+.nyc_output/
+coverage/
 test-results/
-playwright-report/
